@@ -52,5 +52,10 @@
             _multiCalculator.SetStrategy(index);
             resultBox.Text = _multiCalculator.GetResult();
         }
+
+        private void resultBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

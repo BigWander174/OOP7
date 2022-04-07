@@ -1,6 +1,6 @@
 ﻿namespace OOP7
 {
-    partial class Moving
+    partial class SpeedAndAcceleration
     {
         /// <summary>
         /// Required designer variable.

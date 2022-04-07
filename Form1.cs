@@ -1,40 +1,32 @@
-using OOP7.SubApplications.UniversalCalculator;
+using OOP7.FormShower;
 
 namespace OOP7
 {
     public partial class Form1 : Form
     {
+        private Button[] _programButtons;
+        private Launcher _launcher;
+
         public Form1()
         {
             InitializeComponent();
+            _programButtons = new Button[]
+            {
+                button1,
+                button2,
+                button3,
+                button4,
+            };
+
+            _launcher = new Launcher();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void ShowForm(object sender, EventArgs e)
         {
-        }
+            var button = (Button)sender;
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var pifagor = new Pifagor();
-            pifagor.ShowDialog();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            var road = new Moving();
-            road.ShowDialog();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            var calculator = new OneOperationCalculator();
-            calculator.ShowDialog();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            var multiCalculator = new MultiCalculator();
-            multiCalculator.ShowDialog();
+            var index = Array.IndexOf(_programButtons, button);
+            _launcher.ShowForm(index);
         }
     }
 }

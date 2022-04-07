@@ -58,6 +58,7 @@
             this.resultBox.ReadOnly = true;
             this.resultBox.Size = new System.Drawing.Size(410, 243);
             this.resultBox.TabIndex = 19;
+            this.resultBox.TextChanged += new System.EventHandler(this.resultBox_TextChanged);
             // 
             // label4
             // 

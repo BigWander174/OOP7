@@ -1,11 +1,11 @@
 ﻿using OOP7.SubApplications.Moving.Model;
 
-namespace OOP7
+namespace OOP7.SubApplications.Moving
 {
-    public partial class Moving : Form
+    public partial class SpeedAndAcceleration : Form
     {
-        private RoadModel _roadModel = new RoadModel();
-        public Moving()
+        private PhysicsQuantities _roadModel = new RoadModel();
+        public SpeedAndAcceleration()
         {
             InitializeComponent();
         }

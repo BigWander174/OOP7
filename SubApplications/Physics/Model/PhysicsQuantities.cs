@@ -1,6 +1,6 @@
 ﻿namespace OOP7.SubApplications.Moving.Model
 {
-    internal class RoadModel
+    internal class PhysicsQuantities
     {
         private double _startSpeed;
         private double _acceleration;
@@ -14,7 +14,6 @@
 
                 return _startSpeed * _time + _acceleration * _time * _time / 2;
             }
-            
         } 
 
         public void Set(string startSpeed, string acceleration, string time)
